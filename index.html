@@ -10,7 +10,11 @@
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       background: #ffffff;
-      color: #111;
+      color: #111111;
+    }
+
+    a {
+      text-decoration: none;
     }
 
     .container {
@@ -19,13 +23,48 @@
       padding: 40px 20px;
     }
 
+    /* HEADER */
+    header {
+      background: #5B0F3A;
+      padding: 15px 20px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .header-logos {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .header-logos img {
+      height: 55px;
+      background: #fff;
+      padding: 6px;
+      border-radius: 50%;
+    }
+
+    .download-btn {
+      background: #ffffff;
+      color: #5B0F3A;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
     /* HERO */
     .hero {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: space-between;
       gap: 40px;
+      padding: 60px 20px;
     }
 
     .hero-text {
@@ -35,6 +74,7 @@
     .hero-text h1 {
       font-size: 42px;
       margin-bottom: 20px;
+      color: #5B0F3A;
     }
 
     .hero-text p {
@@ -43,35 +83,30 @@
       margin-bottom: 30px;
     }
 
-    .btn {
-      display: inline-block;
-      padding: 14px 28px;
-      background: #000;
+    .cta {
+      background: #5B0F3A;
       color: #fff;
-      text-decoration: none;
-      font-size: 18px;
+      padding: 14px 28px;
       border-radius: 6px;
-    }
-
-    .hero-image {
-      flex: 1;
-      text-align: center;
+      font-size: 18px;
+      display: inline-block;
     }
 
     .hero-image img {
-      max-width: 280px;
+      max-width: 260px;
     }
 
     /* FEATURES */
     .features {
-      background: #f7f7f7;
+      background: #F5F5F5;
       padding: 60px 20px;
     }
 
     .features h2 {
       text-align: center;
-      margin-bottom: 40px;
       font-size: 32px;
+      margin-bottom: 40px;
+      color: #5B0F3A;
     }
 
     .feature-grid {
@@ -81,9 +116,10 @@
     }
 
     .feature {
-      background: #fff;
+      background: #ffffff;
       padding: 20px;
       border-radius: 6px;
+      border-left: 5px solid #5B0F3A;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
@@ -96,105 +132,151 @@
     .cet h2 {
       font-size: 32px;
       margin-bottom: 20px;
+      color: #5B0F3A;
     }
 
     .cet p {
       font-size: 18px;
-      max-width: 700px;
+      max-width: 750px;
       margin: auto;
     }
 
     /* DOWNLOAD */
     .download {
-      background: #000;
-      color: #fff;
+      background: #3D0826;
+      color: #ffffff;
       text-align: center;
       padding: 60px 20px;
     }
 
     .download h2 {
       font-size: 32px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+    }
+
+    .download p {
+      font-size: 18px;
+      margin-bottom: 25px;
     }
 
     .download a {
-      margin-top: 20px;
-      background: #fff;
-      color: #000;
+      background: #ffffff;
+      color: #3D0826;
+      padding: 14px 30px;
+      border-radius: 6px;
+      font-size: 18px;
+      font-weight: bold;
     }
+
+    .price-badge {
+    background: #ffffff;
+    color: #5B0F3A;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+
+  @media (max-width: 768px) {
+  .price-badge {
+    display: none;
+  }
+  }
 
     /* FOOTER */
     footer {
+      background: #111111;
+      color: #cccccc;
       text-align: center;
       padding: 20px;
       font-size: 14px;
-      color: #666;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <div class="container hero">
-    <div class="hero-text">
-      <h1>Maths Wallah<br>Brilliant Mane Sir</h1>
-      <p>
-        Learn mathematics the smart way with easy concepts, time-saving tricks,
-        and exam-oriented teaching. Perfect for school, junior college, and
-        MHT-CET aspirants.
-      </p>
-      <a class="btn" href="https://play.google.com/store/apps/details?id=co.haward.nakyg" target="_blank">
-        Download Now
-      </a>
+<!-- HEADER -->
+<header>
+  <div class="header-content container">
+    <!-- <div class="header-logos"> -->
+      <!-- <img src="logo.jpeg" alt="Maths Wallah Logo"> -->
+      <!-- <img src="logo-phoenix.jpeg" alt="Brilliant Mane's Phoenix Science Academy Logo"> -->
+    <!-- </div> -->
+    <div class="price-badge">
+      Courses starting @ ₹499
     </div>
 
-    <div class="hero-image">
-      <!-- Add your logo image here -->
-      <img src="logo.png" alt="Maths Wallah Logo">
-    </div>
+    <a class="download-btn" href="https://play.google.com/store/apps/details?id=co.haward.nakyg" target="_blank">
+      Download App
+    </a>
   </div>
+</header>
 
-  <!-- FEATURES -->
-  <div class="features">
-    <div class="container">
-      <h2>Why Students Love This App</h2>
-      <div class="feature-grid">
-        <div class="feature">✔ Free Demo Lectures</div>
-        <div class="feature">✔ Easy Maths Tricks</div>
-        <div class="feature">✔ Effective Time Management</div>
-        <div class="feature">✔ Clear & Humorous Teaching</div>
-        <div class="feature">✔ Affordable Course Pricing</div>
-        <div class="feature">✔ Support Chat Available</div>
-      </div>
-    </div>
-  </div>
+<!-- HERO -->
+<div class="container hero">
+  <div class="hero-text">
+    <h1>Maths Wallah<br>Brilliant Mane Sir</h1>
+    <p>
+      Learn mathematics with clarity, smart tricks, and exam-focused strategies.
+      Trusted by students of school, junior college, and MHT-CET aspirants.
+    </p>
 
-  <!-- CET -->
-  <div class="cet">
-    <div class="container">
-      <h2>Complete MHT-CET 2026 Crash Course</h2>
-      <p>
-        Get access to a full MHT-CET 2026 crash course designed with
-        exam-focused lectures, smart shortcuts, and concept clarity
-        by Brilliant Mane Sir.
-      </p>
-    </div>
-  </div>
-
-  <!-- DOWNLOAD -->
-  <div class="download">
-    <h2>Start Learning Today</h2>
-    <p>Download the app and make maths easy and stress-free.</p>
-    <a class="btn" href="https://play.google.com/store/apps/details?id=co.haward.nakyg" target="_blank">
-      Download from Play Store
+    <a class="cta" href="https://play.google.com/store/apps/details?id=co.haward.nakyg" target="_blank">
+      Download Now
     </a>
   </div>
 
-  <!-- FOOTER -->
-  <footer>
-    © 2025 Maths Wallah – Brilliant Mane Sir. All rights reserved.
-  </footer>
+  <div class="hero-image">
+    <img src="logo.jpeg" alt="App Logo">
+  </div>
+</div>
+
+<!-- FEATURES -->
+<div class="features">
+  <div class="container">
+    <h2>Why Choose Maths Wallah?</h2>
+
+    <div class="feature-grid">
+      <div class="feature">✔ Free Demo Lectures Available</div>
+      <div class="feature">✔ Easy Maths Tricks & Shortcuts</div>
+      <div class="feature">✔ Effective Time Management</div>
+      <div class="feature">✔ Humorous & Clear Teaching Style</div>
+      <div class="feature">✔ Affordable Course Pricing</div>
+      <div class="feature">✔ Student Support Chat</div>
+    </div>
+  </div>
+</div>
+
+<!-- CET -->
+<div class="cet">
+  <div class="container">
+    <h2>MHT-CET 2026 Complete Crash Course</h2>
+    <p>
+      A full exam-oriented MHT-CET 2026 crash course designed by
+      Brilliant Mane Sir with smart problem-solving techniques
+      and concept clarity.
+    </p>
+  </div>
+</div>
+
+<!-- DOWNLOAD -->
+<div class="download">
+  <h2>Start Learning Today</h2>
+  <p>Download the app and make maths easy, fast, and stress-free.</p>
+
+  <a href="https://play.google.com/store/apps/details?id=co.haward.nakyg" target="_blank">
+    Download from Play Store
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 Maths Wallah – Brilliant Mane Sir<br>
+  Powered by Brilliant Mane’s Phoenix Science Academy, Baramati
+</footer>
 
 </body>
 </html>
